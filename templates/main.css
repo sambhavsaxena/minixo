@@ -1,0 +1,98 @@
+a {
+    color: white;
+}
+
+a:hover {
+    color: #000;
+    transition: 0.2s;
+}
+
+body {
+    background-color: rgb(151, 71, 255);
+}
+
+h3 {
+    color: white;
+}
+
+.divtop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.divmid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subhead {
+    text-align: center;
+    text-justify: newspaper;
+}
+
+.container {
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(151, 71, 255);
+}
+
+textarea {
+    text-align: center;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 1%;
+    margin-top: 2%;
+}
+
+.rangetdiv {
+    margin: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.range {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    border-radius: 5%;
+    padding: 10px 40px 10px 40px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    margin: 1%;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.equalizer {
+    display: flex;
+    flex-direction: row;
+}
