@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>NLP Minify Engine</title>
+    <title>Minixo Engine</title>
     <style>
         a {
             color: white;
@@ -21,7 +21,7 @@
 <body style="background-color: rgb(151, 71, 255);">
     <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; margin-top: 4%;">
         <h3 style="color: white;">
-            <a href="#">Minify Engine</a>
+            <a href="#">Minixo Engine</a>
             <a target="_blank" href="https://github.com/sambhavsaxena">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github"
                     viewBox="0 0 16 16">
@@ -64,7 +64,7 @@
             </div>
             <div class="col">
                 <div class="exit">
-                    <textarea rows="20" cols="40" name="result" readonly placeholder="Your summary here"
+                    <textarea rows="20" cols="40" id="result" name="result" readonly placeholder="Your summary here"
                         style="background-color: #000; color: white; border: none; border-radius: 1%; text-align: center;">{{result}}</textarea>
                 </div>
                 <div style="display: flex; align-items: center; justify-content: center;">
@@ -76,15 +76,15 @@
         </div>
     </div>
     <footer>
-        <div style="display: flex; align-items: center; justify-content: center;">
-            sambhavsaxena
+        <div style="display: flex; align-items: center; justify-content: center; margin-top: 2%;">
+            With love, Sambhav Saxena
         </div>
     </footer>
 </body>
 
 <script>
     function copy_to_clipboard() {
-        var copyText = document.getElementById("myInput");
+        var copyText = document.getElementById("result");
         copyText.select();
         copyText.setSelectionRange(0, 99999);
         navigator.clipboard.writeText(copyText.value);
