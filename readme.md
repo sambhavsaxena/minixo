@@ -4,7 +4,7 @@
 Minoxo is a data driven web app based on a versatile [machine learning model](https://huggingface.co/facebook/bart-large-cnn) by Facebook (now Meta), which uses articles by [CNN](https://edition.cnn.com/) and can be used for various types of text processing purposes.
 
 One of such purpose is what I took into account for this particular project called Minixo.
-Visit Minixo (here)[https://jerx.pythonanywhere.com/].
+Visit Minixo [here](https://jerx.pythonanywhere.com/).
 
 ![demo of the working model](https://raw.githubusercontent.com/thatsameguyokay/images/main/minixoo.gif)
 
