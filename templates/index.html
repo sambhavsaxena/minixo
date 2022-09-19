@@ -37,15 +37,15 @@
         </div>
     </div>
     <div class="container"
-        style="margin-top: 4%; display: flex; align-items: center; justify-content: center; background-color: rgb(151, 71, 255);">
+        style="margin-top: 5%; display: flex; align-items: center; justify-content: center; background-color: rgb(151, 71, 255);">
         <div class="row">
             <div class="col">
                 <div class="entry">
                     <form action="{{url_for('summary')}}" method="post">
-                        <textarea rows="20" cols="60" name="data" id="data" placeholder="Paste huge amount of text here"
+                        <textarea rows="20" cols="40" name="data" id="data" placeholder="Paste huge amount of text here"
                             required
                             style="text-align: center; background-color: #000; color: white; border: none; border-radius: 1%;"></textarea>
-                        <div style="display: flex; align-items: center; justify-content: center;  margin: 4%;">
+                        <div style="display: flex; align-items: center; justify-content: center;  margin: 5%;">
                             Select the range for your output
                         </div>
                         <div style="display: flex; align-items: center; justify-content: center;">
@@ -64,7 +64,7 @@
             </div>
             <div class="col">
                 <div class="exit">
-                    <textarea rows="20" cols="60" id="result" name="result" readonly placeholder="Your summary here"
+                    <textarea rows="20" cols="40" name="result" readonly placeholder="Your summary here"
                         style="background-color: #000; color: white; border: none; border-radius: 1%; text-align: center;">{{result}}</textarea>
                 </div>
                 <div style="display: flex; align-items: center; justify-content: center;">
@@ -76,7 +76,7 @@
         </div>
     </div>
     <footer>
-        <div style="display: flex; align-items: center; justify-content: center; margin-top: 2%;">
+        <div style="display: flex; align-items: center; justify-content: center;">
             With love, Sambhav Saxena
         </div>
     </footer>
@@ -84,7 +84,7 @@
 
 <script>
     function copy_to_clipboard() {
-        var copyText = document.getElementById("result");
+        var copyText = document.getElementById("myInput");
         copyText.select();
         copyText.setSelectionRange(0, 99999);
         navigator.clipboard.writeText(copyText.value);
