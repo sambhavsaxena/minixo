@@ -5,13 +5,9 @@ from flask import request as req
 
 app = Flask(__name__)
 app.config['KEY'] = environ.get('KEY')
-
-
 @app.route("/", methods=["GET", "POST"])
 def home():
     return render_template("index.html")
-
-
 @app.route("/summary", methods=["GET", "POST"])
 def summary():
     if req.method == "POST":
@@ -20,7 +16,6 @@ def summary():
         data = req.form["data"]
         maxlength = int(req.form["maxlength"])
         minlength = maxlength//4
-
         def query(payload):
             response = requests.post(API_URL, headers=headers, json=payload)
             return response.json()
@@ -32,5 +27,6 @@ def summary():
     else:
         return render_template("index.html")
 
-
-app.run()
+if __name__ == "__main__":
+    app.run()
+    
