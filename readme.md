@@ -33,6 +33,7 @@ Follow the steps to install the application to your local machine:
 
 * Set the environment variables for your API key.
 * The environment variables can be mapped using the `export PATH` command.
+* The environment variable could also be accessed by adding them to a `.env` file.
 * Run the `app.py` file in the virtual environment.
 
 ## To-do
