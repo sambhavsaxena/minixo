@@ -28,13 +28,13 @@ Follow the steps to install the application to your local machine:
 1) python3 -m pip install virtualenv
 2) python3 -m virtualenv <name-of-your-env>
 3) source <path-to-your-env-activation-bash>
-4) pip install requests flask
+4) pip install `requirements.txt`
 ```
 
 * Set the environment variables for your API key.
 * The environment variables can be mapped using the `export PATH` command.
-* The environment variable could also be accessed by adding them to a `.env` file.
-* Run the `app.py` file in the virtual environment.
+* An environment variable can also be accessed by adding it to a `.env` file.
+* Run this Flask app in the virtual environment.
 
 ## To-do
    - Make the app responsive.
