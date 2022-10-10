@@ -28,7 +28,7 @@ Follow the steps to install the application to your local machine:
 1) python3 -m pip install virtualenv
 2) python3 -m virtualenv <name-of-your-env>
 3) source <path-to-your-env-activation-bash>
-4) pip install `requirements.txt`
+4) pip install -r requirements.txt
 ```
 
 * Set the environment variables for your API key.
