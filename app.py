@@ -4,18 +4,23 @@ from flask import Flask, render_template, url_for
 from flask import request as req
 
 app = Flask(__name__)
-app.config['KEY'] = environ.get('KEY')
+
+
 @app.route("/", methods=["GET", "POST"])
 def home():
     return render_template("index.html")
+
+
 @app.route("/summary", methods=["GET", "POST"])
 def summary():
     if req.method == "POST":
         API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-cnn"
-        headers = {"Authorization": f"Bearer " + app.config['KEY']}
+        headers = {
+            "Authorization": f"Bearer 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"}
         data = req.form["data"]
         maxlength = int(req.form["maxlength"])
         minlength = maxlength//4
+
         def query(payload):
             response = requests.post(API_URL, headers=headers, json=payload)
             return response.json()
@@ -27,6 +32,6 @@ def summary():
     else:
         return render_template("index.html")
 
+
 if __name__ == "__main__":
     app.run()
-    
