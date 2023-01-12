@@ -6,7 +6,7 @@ Minoxo is a data driven web app based on a versatile [machine learning model](ht
 One of such purpose is what I took into account for this particular project called Minixo.
 Visit [here](https://jerx.pythonanywhere.com/).
 
-![demo of the working model](https://raw.githubusercontent.com/thatsameguyokay/images/main/minixoo.gif)
+![demo of the working model](https://cdn.statically.io/gh/thatsameguyokay/images/main/minixoo.gif)
 
 This is an all-in-one text summarizer which gathers logic laid down by complex neural networks created by Facebook's open source community. All you need to do in order to get your essays summarized is, just paste the text and set a range for your query. Minixo handles the REST, both literally and figuratively.
 
